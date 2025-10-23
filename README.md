@@ -122,3 +122,11 @@ Copy code
 git add README.md
 git commit -m "Add professional README for real-time weather tracker"
 git push
+
+Download requirements:
+git clone https://github.com/mohammednouman555/real_time_weather_tracker.git
+cd real_time_weather_tracker
+python -m venv .venv
+# Activate the virtual environment
+pip install -r requirements.txt
+python app.py
