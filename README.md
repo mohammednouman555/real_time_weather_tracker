@@ -23,110 +23,88 @@ A **Flask-based real-time weather web application** that allows users to get cur
 ## Screenshots
 
 ![Weather App Screenshot](screenshot.png)  
-*Replace `screenshot.png` with an actual screenshot of your app.*
 
 ---
 
 ## Installation & Setup
 
-1. **Clone the repository:**
+1.  **Clone the repository:**
+    ```bash
+    git clone [https://github.com/mohammednouman555/real_time_weather_tracker.git](https://github.com/mohammednouman555/real_time_weather_tracker.git)
+    cd real_time_weather_tracker
+    ```
 
-```bash
-git clone https://github.com/mohammednouman555/real_time_weather_tracker.git
-cd real_time_weather_tracker
-Create a virtual environment (optional but recommended):
+2.  **Create and activate a virtual environment** (recommended):
 
-bash
-Copy code
-python -m venv .venv
-Activate the virtual environment:
+    * Create the environment:
+        ```bash
+        python -m venv .venv
+        ```
+    * Activate the environment:
+        * On Windows:
+            ```bash
+            .venv\Scripts\activate
+            ```
+        * On Linux/Mac:
+            ```bash
+            source .venv/bin/activate
+            ```
 
-Windows:
+3.  **Install the required packages:**
+    ```bash
+    pip install -r requirements.txt
+    ```
+    * (If `requirements.txt` is missing, install manually):
+        ```bash
+        pip install flask requests
+        ```
 
-bash
-Copy code
-.venv\Scripts\activate
-Linux/Mac:
+4.  **Add your OpenWeatherMap API Key:**
+    * Open the `app.py` file.
+    * Find the line `API_KEY = "YOUR_API_KEY_HERE"` and replace `"YOUR_API_KEY_HERE"` with your actual API key.
 
-bash
-Copy code
-source .venv/bin/activate
-Install required packages:
+5.  **Run the Flask server:**
+    ```bash
+    python app.py
+    ```
 
-bash
-Copy code
-pip install -r requirements.txt
-If requirements.txt does not exist, install manually:
-
-bash
-Copy code
-pip install flask requests
-Add your OpenWeatherMap API Key in app.py:
-
-python
-Copy code
-API_KEY = "YOUR_API_KEY_HERE"
-Run the Flask server:
-
-bash
-Copy code
-python app.py
-Open your browser and visit:
-
-cpp
-Copy code
-http://127.0.0.1:5000
-Project Structure
-csharp
-Copy code
-real_time_weather_tracker/
-│
-├── app.py             # Flask backend
-├── weather_app.py     # Optional CLI version
-├── templates/
-│   └── weather.html   # HTML frontend
-├── static/
-│   └── style.css      # Optional CSS
-└── README.md
-Technologies Used
-Python 3
-
-Flask
-
-OpenWeatherMap API
-
-HTML / CSS / JavaScript
-
-License
-This project is licensed under the MIT License.
-Feel free to use, modify, and share!
-
-Author
-Mohammed Nouman
-
-GitHub: mohammednouman555
-
-Email: mohammednouman555@gmail.com
-
-yaml
-Copy code
+6.  **Open your browser** and visit:
+    `http://127.0.0.1:5000`
 
 ---
 
-### ✅ How to Add to GitHub
+## Project Structure
+real_time_weather_tracker/
+│
+├── app.py # Flask backend
+├── weather_app.py # Optional CLI version ├── templates/
+    │
+    └── weather.html # HTML frontend 
+├── static/
+    │ 
+    └── style.css # Optional CSS
+    └── README.md
 
-1. Save this content as `README.md` in your project root.  
-2. Stage, commit, and push:
+---
 
-```bash
-git add README.md
-git commit -m "Add professional README for real-time weather tracker"
-git push
+## Technologies Used
 
-Download requirements:
-git clone https://github.com/mohammednouman555/real_time_weather_tracker.git
-cd real_time_weather_tracker
-python -m venv .venv
-# Activate the virtual environment
-pip install -r requirements.txt
-python app.py
+* Python 3
+* Flask
+* OpenWeatherMap API
+* HTML / CSS / JavaScript
+
+---
+
+## License
+
+This project is licensed under the **MIT License**.
+Feel free to use, modify, and share!
+
+---
+
+## Author
+
+**Mohammed Nouman**
+* **GitHub:** [@mohammednouman555](https://github.com/mohammednouman555)
+* **Email:** mohammednouman555@gmail.com
